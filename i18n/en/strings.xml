@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="home">Home</string>	
+	<string name="shows">Shows</string>
+	<string name="people">People</string>
+	<string name="theater">Theaters</string>
+	<string name="awards">Awards</string>
+	<string name="about">About</string>
+</resources>

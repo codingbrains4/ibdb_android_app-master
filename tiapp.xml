@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="ti.android.runtime">v8</property>
+    <sdk-version>2.0.1.GA2</sdk-version>
+    <deployment-targets>
+        <target device="mobileweb">false</target>
+        <target device="iphone">false</target>
+        <target device="ipad">false</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <id>com.broadwayleague.IBDB</id>
+    <name>IBDB</name>
+    <version>1.0.1</version>
+    <publisher>The Broadway League</publisher>
+    <url>http://broadwayleague.com</url>
+    <description>IBDB (Internet Broadway Database) Is a is a comprehensive database of shows produced on Broadway in New York City from the very beginnings of commercial theater through to the present day and into the future.</description>
+    <copyright>2012 The Broadway League</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>true</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
+    <guid>0d2f6dc0-19f5-4602-a686-ac8f2bf8b324</guid>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:installLocation="preferExternal" android:versionCode="2" android:versionName="1.0.1">
+            <supports-screens android:anyDensity="false"
+                android:largeScreens="true" android:normalScreens="true" android:smallScreens="false"/>
+            <uses-sdk android:minSdkVersion="8"/>
+            <application>
+                <activity android:configChanges="keyboardHidden"
+                    android:name="org.appcelerator.titanium.TiActivity" android:screenOrientation="portrait"/>
+                <activity android:configChanges="keyboardHidden"
+                    android:name="org.appcelerator.titanium.TiTranslucentActivity"
+                    android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+                <activity android:configChanges="keyboardHidden"
+                    android:name="org.appcelerator.titanium.TiModalActivity"
+                    android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+                <activity android:configChanges="keyboardHidden"
+                    android:name="ti.modules.titanium.ui.TiTabActivity" android:screenOrientation="portrait"/>
+                <activity
+                    android:name="ti.modules.titanium.ui.android.TiPreferencesActivity" android:screenOrientation="portrait"/>
+                <service android:exported="false"
+                    android:name="org.appcelerator.titanium.analytics.TiAnalyticsService" android:screenOrientation="portrait"/>
+            </application>
+        </manifest>
+    </android>
+    <modules/>
+</ti:app>

@@ -1,0 +1,2 @@
+Place your license text here. n……………….
+ This file will be incorporated with your app at package time.        
